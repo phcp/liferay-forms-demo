@@ -1,10 +1,16 @@
 version: '2.1'
 services:
 
+  admin:
+    image: adminer:4.3
+    depends_on:
+      db:
+        condition: service_healthy
+
   db:
     build: ./db/ 
     ports:
-     - "3306:3306"
+      - "4306:3306"
     volumes: 
       - "/var/lib/mysql"
     healthcheck:
@@ -21,5 +27,4 @@ services:
       db:
         condition: service_healthy
     volumes:
-      - "/liferay/osgi/"
-      - "/opt/liferay/data/"
+      - ./liferay:/etc/liferay/mount
