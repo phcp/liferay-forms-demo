@@ -1,1 +1,3 @@
 FROM liferay/portal-snapshot:7.1.x-201812071242-af6321a
+
+COPY files /etc/liferay/mount/files
