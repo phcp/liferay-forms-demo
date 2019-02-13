@@ -3,7 +3,7 @@
 
 TGF is an insurance company demo that uses Liferay technologies to leverage customer experience through mobile and web platforms.
 
-## What Liferay technologies were used? 
+## What Liferay technologies were used?
 
 ### Web and APIs
 - [**Liferay CE 7.1 GA3**](https://github.com/liferay/liferay-portal) for a web experience and to provide API services, mainly using:
